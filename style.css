@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto';
+}
+
+body{
+    background-color:var(--bg-color);
+}
+
+:root{
+    --bg-color:#03020D;
+    --number-color:#251659;
+    --operation-color:#9C8BD9;
+    --main-btn-color:#BF9FBA;
+    --border-color:#7559D9;
+}
+
+.calc-container{
+    padding-top:4rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    width:100%;
+    max-width:350px;
+    height:100vh;
+    margin:auto;
+}
+
+.calc-container #res{
+    text-align:right;
+    padding:3px;
+    height:3rem;
+    background:white;
+    color:var(--border-color);
+    border:1px solid var(--border-color);
+    border-radius:0.5rem;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+h2{
+    color:white;
+    text-align:center;
+}
+
+.operator-container{
+    display:flex;
+    flex-direction:column;
+    padding:1rem;
+    width:100%;
+    border:2px solid var(--border-color);
+    border-radius:0.5rem;
+}
+
+
+.col{
+    display:flex;
+    
+}
+
+.col-1 button:nth-child(4){
+    background:var(--main-btn-color);
+}
+
+.col-2 button:nth-child(4){
+    background:var(--operation-color);
+}
+
+.col-3 button:nth-child(4){
+    background:var(--operation-color);
+}
+
+
+.col-4 button{
+    background:var(--operation-color);
+}
+.col-4 button:nth-child(2){
+    background:var(--number-color);
+}
+
+.col-5{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.col-5 button{
+    width:50%;
+}
+
+.col-5 button:nth-child(1){
+    background-color:var(--main-btn-color);
+}
+
+.col-5 button:nth-child(2){
+    background-color:var(--border-color);
+}
+
+button{
+    border:none;
+    margin:3px;
+    border-radius:0.5rem;
+    width:5rem;
+    height:5rem;
+    color:white;
+    font-weight:bold;
+    font-size:1rem;
+    background:var( --number-color);
+    transition:0.5s;
+    opacity:0.7;
+}
+
+button:hover{
+    opacity:1;
+    cursor:pointer;
+}
